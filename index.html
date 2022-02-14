@@ -5,7 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+
   <title>Frontend Mentor | NFT preview card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,19 +19,39 @@
   </style>
 </head>
 <body>
+  <main class="card">
+    <div class="card-image">
+      <img class="card-image" src="image-equilibrium.jpg"/>
+    </div>
+    <div class="card-text">
+      <h1 class="card-text-title">Equilibrium #3429</h1>
 
-  Equilibrium #3429
+      <p class="card-text-paragraph">Our Equilibrium collection promotes balance and calm.</p>
 
-  Our Equilibrium collection promotes balance and calm.
+      <div class="card-stats>"
+        <div class="card-number">
+          <img class="card-number-icon" src="icon-ethereum.svg"/>
+          <p class="card-number-text">0.041 ETH</p>
+        </div>
 
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
+        <div class="card-days">
+          <img src="icon-clock.svg"/>
+          <p class="card-days-text">3 days left</p>
+        </div>
+      </div>
 
+      <hr>
+
+      <div class="card-text-attribution">
+        <img src="image-avatar.png">
+        <p class="card-text-attribution">Creation of <span>Jules Wyvern</span></p>
+
+      </div>
+    </div>
+  </main>
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">KaiEliBax</a>.
   </div>
 </body>
 </html>
