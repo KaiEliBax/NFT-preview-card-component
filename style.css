@@ -1,0 +1,120 @@
+:root {
+  --project-font: Outfit, sans-serif;
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --main-bg:  hsl(217, 54%, 11%);
+  --card-bg: hsl(216, 50%, 16%);
+  --blue-line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--main-bg);
+}
+
+.card {
+  background-color: var(--card-bg);
+  height: 440px;
+  width: 260px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+}
+
+.card-image {
+  width: 225px;
+  margin: auto;
+  padding-top: 9px;
+  border-radius: 10px;
+}
+
+.card-text {
+  width: 225px;
+  margin: auto;
+  position: relative;
+  top: 12px;
+}
+
+h1, p {
+  font-family: var(--project-font);
+}
+
+.card-text-title {
+  color: var(--white);
+  font-size: 16.5px;
+  padding-bottom: 11px;
+}
+
+.card-text-paragraph {
+  font-size: 13.5px;
+  color: var(--soft-blue);
+  line-height: 20px;
+}
+
+.card-stats {
+  width: 100%;
+  position: relative;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.card-number {
+  display: inline-block;
+  /* position: relative; */
+  /* left: 0px; */
+}
+
+.card-number-icon {
+  display: inline-block;
+  height: 12px;
+}
+
+.card-number-text {
+  color: var(--cyan);
+  display: inline-block;
+  font-size: 12px;
+}
+
+.card-days {
+ display: inline-block;
+ /* position: relative; */
+}
+
+.card-days-icon {
+  display: inline-block;
+  height: 5px;
+}
+
+.card-days-text {
+  color: var(--soft-blue);
+  display: inline-block;
+  font-size: 12px;
+}
+
+hr {
+ border: 0;
+ border-top: 1px solid var(--soft-blue);
+}
+
+.card-text-attribution {
+ color: var(--soft-blue);
+}
+
+span {
+  color: var(--white);
+}
+
+.attribution {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
