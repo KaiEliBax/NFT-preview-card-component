@@ -29,86 +29,127 @@ body {
   border-radius: 10px;
 }
 
-.card-image {
+.image-container {
   width: 225px;
-  margin: auto;
-  padding-top: 9px;
-  border-radius: 10px;
+  height: 225px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  top: 9px;
 }
 
-.card-text {
+.card-image {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.card-image-hover {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  align-items: center;
+  transition: .3s;
+}
+
+.card-image-hover img {
+  height: 20%;
+  visibility: hidden;
+  opacity: 0.5;
+}
+
+.card-image-hover:hover {
+  background-color: hsl(178, 100%, 50%, 0.5);
+  border-radius: 5px;
+}
+
+.card-image-hover:hover img{
+  visibility: visible;
+}
+
+.card-text-container{
   width: 225px;
   margin: auto;
   position: relative;
   top: 12px;
-}
-
-h1, p {
   font-family: var(--project-font);
 }
 
-.card-text-title {
+.card-text h1 {
   color: var(--white);
   font-size: 16.5px;
   padding-bottom: 11px;
 }
 
-.card-text-paragraph {
+.card-text p {
   font-size: 13.5px;
   color: var(--soft-blue);
   line-height: 20px;
 }
 
-.card-stats {
-  width: 100%;
+.card-text-stats {
   position: relative;
-  display: inline-flex;
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  top: 20px;
 }
 
-.card-number {
-  display: inline-block;
-  /* position: relative; */
-  /* left: 0px; */
-}
-
-.card-number-icon {
-  display: inline-block;
-  height: 12px;
-}
-
-.card-number-text {
+.stats-price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   color: var(--cyan);
-  display: inline-block;
   font-size: 12px;
 }
 
-.card-days {
- display: inline-block;
- /* position: relative; */
+.stats-price img {
+  height: 13px;
+  margin-right: 5px;
 }
 
-.card-days-icon {
-  display: inline-block;
-  height: 5px;
+.stats-days {
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ color: var(--soft-blue);
+ font-size: 12px;
 }
 
-.card-days-text {
-  color: var(--soft-blue);
-  display: inline-block;
-  font-size: 12px;
+.stats-days img {
+  height: 12px;
+  margin-right: 5px;
 }
 
 hr {
  border: 0;
- border-top: 1px solid var(--soft-blue);
+ border-top: 1px solid hsl(215, 51%, 70%, 0.3);
+ position: relative;
+ top: 37px;
 }
 
 .card-text-attribution {
  color: var(--soft-blue);
+ position: relative;
+ display: inline-flex;
+ top: 50px;
+ align-items: center;
+ font-size: 12px;
 }
 
-span {
+.card-text-attribution img {
+  height: 25px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-right: 12px;
+  background-color: white;
+}
+
+.card-text-attribution p span {
   color: var(--white);
 }
 
