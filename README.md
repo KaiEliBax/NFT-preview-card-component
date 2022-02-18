@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](NFT%20Final Product.png)
+![](NFT%20-%20Final Product.png)
 
 ### Links
 
