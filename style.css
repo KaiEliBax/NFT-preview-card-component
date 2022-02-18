@@ -59,7 +59,6 @@ body {
 .card-image-hover img {
   height: 20%;
   visibility: hidden;
-  opacity: 0.5;
 }
 
 .card-image-hover:hover {
