@@ -35,7 +35,7 @@ body {
   position: relative;
   left: 50%;
   transform: translate(-50%);
-  top: 9px;
+  top: 17px;
 }
 
 .card-image {
@@ -75,7 +75,7 @@ body {
   width: 225px;
   margin: auto;
   position: relative;
-  top: 12px;
+  top: 33px;
   font-family: var(--project-font);
 }
 
